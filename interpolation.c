@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include "headers.h"
 
-#define SIZE 50
+#define SIZE 15
 
 double f(double x) { //Gubenko Olesya 112
-	return x/6-12;
+	return 3*x*x*x*x*x-x*x*x*x-5*x*x*x+6*x*x+1;
 }
 
 int function() //Gubenko Olesya 112

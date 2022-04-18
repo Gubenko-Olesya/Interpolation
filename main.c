@@ -1,8 +1,9 @@
+//programma po dannim naboram argumentov i ih znacheniy vichislyaet priblizhennoe znacheniye funcsii v dannoi tochke x
 #include <stdio.h>
 #include <stdlib.h>
 #include "headers.h"
 
-#define SIZE 50
+#define SIZE 15
 
 int main() //Gubenko Olesya 112
 {
@@ -32,13 +33,13 @@ int main() //Gubenko Olesya 112
 		printf("%lf\t\t%lf\n", array_x[i], array_y[i]);
 	}*/
 
-
+	printf("Programma po dannim naboram argumentov i ih znacheniy vichislyaet priblizhennoe znacheniye funcsii v dannoi tochke x.\n");
 	printf("Enter x.\n");
 	if (scanf("%lf", &x)!=1){
 		printf("Unexpectable x.\n");
 		return -1;
 	}
 	double y = lagranz(x, array_x, array_y);
-	printf("y: %lf\n", y);
+	printf("Znacheniye funcsii v tochke x: %lf\n", y);
 	return 0;
 }
